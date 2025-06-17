@@ -11,7 +11,7 @@ import cartopy.feature as cfeature
 
 # Okay...so this is a massive array to plot here. Good thing I have a powerful system, this might have fried my laptop. Gotta drop down the memory usage here. Tis using up nearly 4 gigs of RAM for just plotting this array.
 
-GRACE = xr.open_dataset('C:/Users/spyro/OneDrive/Desktop/Python Projects/TopoGravCorrelator/Data/GRACE/GRCTellus.JPL.200204_202503.GLO.RL06.3M.MSCNv04CRI.nc')
+GRACE = xr.open_dataset('Path to GRACE dataset')
 
 # GRACE spatial info
 lat = GRACE.lat.values
@@ -33,7 +33,7 @@ GRACE_transform = Affine(
 # the output array that will hold the downsized topography
 Topography_downsampled = np.empty((nlatitude, nlongitude), dtype = np.float32)
 
-with rasterio.open("C:/Users/spyro/OneDrive/Desktop/Python Projects/TopoGravCorrelator/Data/ETOPO 2022 Geoid Height/ETOPO_2022_v1_30s_N90W180_geoid.tif") as src:
+with rasterio.open("Path to ETOPO dataset") as src:
     reproject(
         source = rasterio.band(src, 1),
         destination = Topography_downsampled,

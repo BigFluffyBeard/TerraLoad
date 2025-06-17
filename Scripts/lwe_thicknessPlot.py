@@ -8,7 +8,7 @@ from matplotlib.gridspec import GridSpec
 
 #### This script makes use of the lwe_thickness variable read from the GRACE satellite mission. The topography is from the SRTM (Shuttle Radar Topography Mission) via using the python elevation package (pip install elevation, elevation --help, elevation --output srtm.tif --bounds -180 -90 180 90)
 
-dataset = xr.open_dataset('C:/Users/spyro/OneDrive/Desktop/Python Projects/TopoGravCorrelator/Data/GRACE/GRCTellus.JPL.200204_202503.GLO.RL06.3M.MSCNv04CRI.nc')
+dataset = xr.open_dataset('Path to GRACE dataset')
 
 # print(dataset)
 

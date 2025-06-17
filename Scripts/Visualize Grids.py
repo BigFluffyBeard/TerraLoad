@@ -9,7 +9,7 @@ import xarray as xr
 
 ### This script is primarily for just visualizing what the affine transforms are doing. It's important to know what your code does.
 
-GRACE = xr.open_dataset('C:/Users/spyro/OneDrive/Desktop/Python Projects/TopoGravCorrelator/Data/GRACE/GRCTellus.JPL.200204_202503.GLO.RL06.3M.MSCNv04CRI.nc')
+GRACE = xr.open_dataset('Path to Grace dataset')
 latitude = GRACE.lat.values
 longitude = GRACE.lon.values
 
@@ -25,7 +25,7 @@ longitude_max = float(longitude.max())
 GRACE_transform = Affine(longitude_res, 0, longitude_min, 0, -latitude_res, latitude_max)
 
 downsampled_topography = np.empty((nlatitude, nlongitude), dtype = np.float32)
-ETOPO_path = ("C:/Users/spyro/OneDrive/Desktop/Python Projects/TopoGravCorrelator/Data/ETOPO 2022 Geoid Height/ETOPO_2022_v1_30s_N90W180_geoid.tif")
+ETOPO_path = ("Path to ETOPO dataset")
 
 with rasterio.open(ETOPO_path) as src:
     reproject(
