@@ -1,2 +1,14 @@
 # TerraLoad
 This is a personal project I'm using as an excuse to learn more on remote sensing, do more math, brush up on python, etc. It's very much a work in progress, and is quite messy as a result. Hopefully, as time goes on, that will change.
+
+I'm using these satellite datasets for this project:
+
+**Grace Dataset**
+
+D. N. Wiese, D.-N. Yuan, C. Boening, F. W. Landerer, M. M. Watkins. 2023. JPL GRACE and GRACE-FO Mascon Ocean, Ice, and Hydrology Equivalent Water Height CRI Filtered RL06.3Mv04. Ver. RL06.3Mv04. PO.DAAC, CA, USA. Dataset accessed [2025-05-28] at https://doi.org/10.5067/TEMSC-3JC634
+
+**Teopography dataset**
+
+NOAA National Centers for Environmental Information. 2022: ETOPO 2022 15 Arc-Second Global Relief Model. NOAA National Centers for Environmental Information. DOI: 10.25921/fd45-gt74. Accessed [6/1/2025].
+
+I'd have them directly in the repository...but I'm not quite sure if that'd be a problem or not. They are publically available though. I'm going to try and make sure every figure/animation can be seen on github.
