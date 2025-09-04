@@ -1,5 +1,7 @@
 # TerraLoad
-This is a personal project I'm using as an excuse to learn more on remote sensing, do more math, brush up on python, etc. It's very much a work in progress, so it's quite messy and uncommented at the moment. Hopefully, as time goes on, that will change.
+This is a personal project I'm using as an excuse to learn more on remote sensing, do more math, brush up on python, etc. It's very much a work in progress, so it's quite messy and uncommented at the moment. Hopefully, as time goes on, that will change. 
+
+I...do not know if any of the code here could make your device vulnerable or not. Just excercise caution, as you would anywhere else.
 
 I'm using these satellite datasets for this project:
 
@@ -21,6 +23,12 @@ Go look at it, I learned a lot from it and so should you!
 
 The still images for the geometry of the orbital elements are from the video "Kepler's Impossible Equation" by Welch Labs on Youtube. Go watch it, you'll learn a lot: https://www.youtube.com/watch?v=hBkmyJ3TE0g
 
+**TLE Figure**
+
+The figure showing how to read a TLE comes from the article "TIGRISAT Orbital MotionSimulation and Analysis" by Mohammed Chessab Mahdi
+
+Link to this article: https://www.researchgate.net/publication/291328762_TIGRISAT_Orbital_MotionSimulation_and_Analysis
+
 
 # Heavily used and referenced websites, libraries, books, reference papers, and videos:
 Just thought I'd start a list of sources that have been tremendous learning sources. Will be updated.
@@ -29,10 +37,17 @@ Just thought I'd start a list of sources that have been tremendous learning sour
   Python Package: https://rhodesmill.org/skyfield/
 
 ***Geodynamics - Second Edition by Donald L. Turcotte and Gerald Schubert***
-  Book
+  --- Book
   
 ***The Solid Earth: An Introduction to Global Geophysics - by C.M.R. Fowler***
-  Book
+  --- Book
+
+***Astrodynamics - by Roger R. Bate, Donald D. Mueller, and Jerry E. White***
+  --- Book
+
+***A Note on the Relations between True and Eccentric Anomalies in the Two-Body Problem - by R. Broucke & P. Cefola***
+  Article: https://ui.adsabs.harvard.edu/abs/1973CeMec...7..388B/abstract
+
 
 ***Impacts of local green's functions on modeling atmospheric loading effects for GNSS reference stations. - Fan, W., et al.***
   Scientific Review Paper:  Fan, W., Jiang, W., Li, Z., Tao, J., Wang, Z., & He, L. (2024). Impacts of local green's functions on modeling atmospheric loading effects for GNSS reference stations. Earth and Space Science, 11, e2023EA003113. https://doi.org/10.1029/2023EA003113
@@ -42,4 +57,7 @@ Just thought I'd start a list of sources that have been tremendous learning sour
 
 ***QuickRef.ME - Python Cheatsheet***
   Coding/Programming quick reference website. Specifically the Python page: https://quickref.me/python
+
+***NORAD CalesTrak***
+  TLEs, get your TLEs here! As usual, excercise caution: https://www.celestrak.org/NORAD/elements/
 
